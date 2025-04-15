@@ -1,0 +1,21 @@
+.shared-inbox-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 70vh; */
+  max-width: 100%;
+  gap: 100px;
+}
+.manage-labels {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+/* .shared-inbox-fixed-1 {
+  position: sticky;
+  top: 90px;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+} */

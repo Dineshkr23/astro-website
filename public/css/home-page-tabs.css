@@ -1,0 +1,176 @@
+/* Container */
+.whatsapp-flows-container {
+  border: rgba(12, 159, 250, 0.15) 3px solid;
+  border-radius: 20px;
+  max-width: 90%;
+  margin: 150px 0 20px 0;
+}
+
+.tabs-container-section {
+  display: flex !important;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tabs */
+.whatsapp-flows-tabs {
+  width: 100%;
+  position: relative;
+  top: -100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  z-index: 10;
+  margin-bottom: -65px;
+}
+
+.whatsapp-flows-tab {
+  padding: 10px 10px;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 10px;
+  background: #fff;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  transition: 0.3s ease;
+  gap: 6px;
+  width: 130px;
+}
+
+.whatsapp-flows-tab:hover {
+  border-color: #0c9ffa;
+  color: #0c9ffa;
+}
+
+.whatsapp-flows-tab.whatsapp-flows-active {
+  background-color: #f7f7f7;
+  color: #000;
+}
+
+/* Content */
+.whatsapp-flows-content {
+  max-width: 100%;
+  /* padding: 0 0px 0 40px; */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.whatsapp-flows-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.whatsapp-flows-content h1 span {
+  color: #666;
+  font-weight: normal;
+}
+
+.whatsapp-flows-content h1 strong {
+  font-weight: bold;
+  color: #000;
+}
+
+.whatsapp-flows-content p {
+  margin-bottom: 30px;
+  color: #666;
+  font-size: 1.1em;
+}
+
+/* Mobile Preview */
+.whatsapp-flows-preview {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.whatsapp-flows-preview img {
+  width: 250px;
+  height: auto;
+  border: 1px solid #e0e0e0;
+  border-radius: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Hide Content */
+.hidden {
+  display: none;
+}
+
+.scaled-image {
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth animation */
+}
+
+/* Hover Effect */
+.scaled-image:hover {
+  transform: scale(1.05); /* Scales the image by 10% */
+}
+
+.carousel-indicators {
+  display: flex;
+  align-items: center;
+  background: #f8f9fa;
+  padding: 10px 15px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.05);
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-left: 10% !important;
+  margin-right: 10% !important;
+}
+
+.indicator {
+  width: 3px;
+  height: 25px;
+  background-color: #0c9ffa;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.text {
+  font-size: 18px;
+  font-weight: 500;
+  color: #555;
+  margin-right: 10px;
+}
+
+.carousel-list {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.carousel-list li {
+  background: none !important;
+  color: #000 !important;
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: opacity 0.3s ease, background-color 0.3s ease;
+  text-indent: 5px;
+  border-top: none;
+  border-bottom: none;
+  height: 3vh;
+  /* opacity: 0.5; Removed !important */
+}
+
+.carousel-list li.active {
+  background-color: #0c9ffa !important;
+  color: #fff !important;
+}
+
+/* tabs */

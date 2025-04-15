@@ -1,0 +1,147 @@
+---
+import WhatsappLayout from "../../layouts/whatsapp-business-api/WhatsappLayout.astro";
+import "../../../public/whatsapp-business-api/css/case-study.css";
+import PhoneApp from "../../components/PhoneApp.astro";
+import LogoStrips from "../../components/LogoStrips.astro";
+
+const metaTitle = "Book a WhatsApp API Demo | Emovur";
+const metaDescription =
+  "Experience the Emovur WhatsApp Business API in action. Book a free demo and see how fast you can get started.";
+const canonicalUrl = "https://emovur.com/whatsapp-business-api/product-demo";
+const keywords =
+  "book demo, whatsapp api demo, emovur product tour, chatbot demo, marketing automation demo.";
+---
+
+<WhatsappLayout
+  title={metaTitle}
+  description={metaDescription}
+  canonical={canonicalUrl}
+  keywords={keywords}
+>
+  <!-- sticky buttons section ends -->
+  <div class="mt-150">
+    <div class="container">
+      <div class="product-demo-heading">
+        <h1>
+          WhatsApp Business API <br /><span style="color: #42B763"
+            >Product Demo</span
+          >
+        </h1>
+      </div>
+
+      <div class="product-demo-video">
+        <iframe
+          width="100%"
+          height="600px"
+          src="https://www.youtube.com/embed/Bq6FRY0yoOM"
+          frameborder="0"
+          allowfullscreen
+        >
+        </iframe>
+      </div>
+      <div class="product-demo-button">
+        <a href="/whatsapp-busniess-api/book-demo" target="_blank">
+          <button class="schedule-btn theme-btn" id="lp-demo-btn">
+            Book 1-1 Demo
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <LogoStrips />
+
+  <div class="last-strip-container" style="padding-top: 100px">
+    <div class="container">
+      <div class="last-strip-main">
+        <div>
+          <div
+            class="brands-main-last"
+            style="margin-bottom: 15px;display: flex;gap: 10px;align-items: center;"
+          >
+            <h6 style="font-weight:300;font-size:1.7rem">Get Started with</h6>
+            <h6 style="font-weight:500;font-size:1.7rem;color:#0c9ffa">
+              Emovur
+            </h6>
+            <h6 style="font-weight:300;font-size:1.7rem">Today</h6>
+          </div>
+          <div class="last-section-tick-mark">
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Engage & Re-engage Prospects</p>
+            </div>
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Drive Sales</p>
+            </div>
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Deliver higher CSAT</p>
+            </div>
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Support at Scale</p>
+            </div>
+          </div>
+          <div
+            class="read-me"
+            style="margin-top: 20px;background-color:#fff;border:1px solid #0c9ffa"
+          >
+            <p>Try Emovur for Free</p>
+            <img
+              src="/whatsapp-business-api/images/Objects.png"
+              alt="section-page-1"
+              style="width: 7px;"
+            />
+          </div>
+        </div>
+        <img
+          src="/whatsapp-business-api/images/plat-last-section.png"
+          alt="heart"
+          style="width:20%;position:absolute;right:40px;bottom:0"
+        />
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile footer sticky starts -->
+  <div class="mobile-sticky-footer-container">
+    <div>
+      <a
+        href="https://admin.emovur.com/auth/register"
+        target="_blank"
+        id="stky-sft-mobile-btn"
+      >
+        Start Free Trial
+      </a>
+    </div>
+    <div>
+      <a
+        href="/whatsapp-business-api/book-demo"
+        target="_blank"
+        id="stky-b1d-mobile-btn"
+      >
+        Book 1-1 Demo
+      </a>
+    </div>
+  </div>
+  <!-- mobile footer sticky ends -->
+
+  <PhoneApp />
+</WhatsappLayout>

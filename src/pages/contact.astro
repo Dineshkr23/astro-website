@@ -1,0 +1,231 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const metaTitle = "Get in Touch | Emovur – Hyperlocal Marketing Experts";
+const metaDescription =
+  "Have questions or ready to grow your local presence? Contact Emovur’s hyperlocal marketing team. We're here to help your business connect with the right audience.";
+const canonicalUrl = "https://emovur.com/contact";
+const keywords =
+  "hyperlocal marketing, local seo, location based marketing, geo-targeting, nearby customer reach.";
+---
+
+<Layout
+  title={metaTitle}
+  headerType="main"
+  description={metaDescription}
+  canonical={canonicalUrl}
+  keywords={keywords}
+>
+  <!-- 
+			=============================================
+				Text Inner Banner One
+			============================================== 
+			-->
+  <div class="text-inner-banner-one pos-r">
+    <div class="shape-wrapper">
+      <svg class="img-shape shape-one">
+        <path
+          fill-rule="evenodd"
+          fill="rgb(255, 223, 204)"
+          d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
+        ></path>
+      </svg>
+      <svg class="img-shape shape-two">
+        <path
+          fill-rule="evenodd"
+          fill="rgb(182, 255, 234)"
+          d="M6.000,12.000 C9.314,12.000 12.000,9.314 12.000,6.000 C12.000,2.686 9.314,-0.000 6.000,-0.000 C2.686,-0.000 -0.000,2.686 -0.000,6.000 C-0.000,9.314 2.686,12.000 6.000,12.000 Z"
+        ></path>
+      </svg>
+      <svg class="img-shape shape-three">
+        <path
+          fill-rule="evenodd"
+          fill="rgb(181, 198, 255)"
+          d="M12.000,24.000 C18.627,24.000 24.000,18.627 24.000,12.000 C24.000,5.372 18.627,-0.000 12.000,-0.000 C5.372,-0.000 -0.000,5.372 -0.000,12.000 C-0.000,18.627 5.372,24.000 12.000,24.000 Z"
+        ></path>
+      </svg>
+      <svg class="img-shape shape-four">
+        <path
+          fill-rule="evenodd"
+          fill="rgb(255, 156, 161)"
+          d="M7.500,15.000 C11.642,15.000 15.000,11.642 15.000,7.500 C15.000,3.358 11.642,-0.000 7.500,-0.000 C3.358,-0.000 -0.000,3.358 -0.000,7.500 C-0.000,11.642 3.358,15.000 7.500,15.000 Z"
+        ></path>
+      </svg>
+      <svg class="img-shape shape-five">
+        <path
+          fill-rule="evenodd"
+          fill="rgb(178, 236, 255)"
+          d="M12.500,25.000 C19.403,25.000 25.000,19.403 25.000,12.500 C25.000,5.596 19.403,-0.000 12.500,-0.000 C5.596,-0.000 -0.000,5.596 -0.000,12.500 C-0.000,19.403 5.596,25.000 12.500,25.000 Z"
+        ></path>
+      </svg>
+    </div>
+    <!-- /.shape-wrapper -->
+    <div class="container">
+      <nav aria-label="breadcrumb">
+        <p>
+          <span class="breadcrumb-item"><a href="/">Home</a></span>
+          <span class="breadcrumb-item active" aria-current="page">Contact</span
+          >
+        </p>
+      </nav>
+      <h1 style="font-size: 60px;" class="pt-30 pb-15">
+        Discuss Your Project With Emovur
+      </h1>
+    </div>
+  </div>
+  <!-- /.text-inner-banner-one -->
+
+  <!--
+			=====================================================
+				Contact Address
+			=====================================================
+			-->
+  <div class="contact-address-two">
+    <div class="container vw-container">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="address-block">
+            <div class="icon-box">
+              <img src="images/emovur-icons/phone.svg" alt="phone-call-icon" />
+            </div>
+            <h5>Like what you see?<br />Let's talk.</h5>
+            <p><a href="tel:7373735479">+91-73-73-73-5479</a></p>
+          </div>
+          <!-- /.address-block -->
+        </div>
+        <!-- /.col- -->
+        <div class="col-md-4">
+          <div class="address-block">
+            <div class="icon-box">
+              <img src="images/icon/icon21.svg" alt="email-icon" />
+            </div>
+            <h5>Wanna keep it formal?<br />Drop a mail.</h5>
+            <p><a href="#">support@emovur.com</a></p>
+          </div>
+          <!-- /.address-block -->
+        </div>
+        <!-- /.col- -->
+        <div class="col-md-4">
+          <div class="address-block">
+            <div class="icon-box">
+              <img src="images/icon/icon20.svg" alt="locate-us-icon" />
+            </div>
+            <h5>Stay near by? <br /> Visit Us.</h5>
+            <p>Emospace, Electronic City, Bengaluru</p>
+          </div>
+          <!-- /.address-block -->
+        </div>
+        <!-- /.col- -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.contact-address-two -->
+
+  <!--
+			=====================================================
+				Contact Form
+			=====================================================
+			-->
+  <div class="contact-us-section pt-80 pb-150">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-last">
+          <div class="contact-form">
+            <form
+              class="form theme-form-style-one"
+              id="contactinfo_form"
+              data-toggle="validator"
+            >
+              <div class="messages"></div>
+              <div class="controls">
+                <div class="form-group">
+                  <input
+                    type="email"
+                    id="email"
+                    placeholder="Email Address*"
+                    required="required"
+                    data-error="Valid email is required."
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                  <input
+                    type="text"
+                    id="mobile"
+                    placeholder="Mobile*"
+                    required="required"
+                    data-error="Subject is required."
+                  />
+                  <div class="help-block with-errors"></div>
+                </div>
+
+                <div class="form-group">
+                  <textarea
+                    id="msg"
+                    class="form_message"
+                    placeholder="Your Message"></textarea>
+                  <div class="help-block with-errors"></div>
+                </div>
+                <button
+                  class="theme-btn line-button-one contact-button button-orange"
+                  type="submit"
+                  id="send_msg">Submit</button
+                >
+              </div>
+              <!-- /.controls -->
+            </form>
+            <div id="notice">
+              <h6 id="response"></h6>
+            </div>
+          </div>
+          <!-- /.contact-form -->
+        </div>
+        <div class="col-lg-6 order-lg-first">
+          <div class="md-mt-80">
+            <div>
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15558.931812884022!2d77.6601282!3d12.8605171!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b88ad8602675d15!2sEMOVUR!5e0!3m2!1sen!2sin!4v1609755224396!5m2!1sen!2sin"
+                width="500"
+                height="450"
+                frameborder="0"
+                style="border:0;"
+                allowfullscreen=""></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.contact-us-section -->
+</Layout>
+
+<script>
+  $("#contactinfo_form").submit(function () {
+    var mobile = $("#mobile").val();
+    var email = $("#email").val();
+    var message = $("#msg").val();
+    var dataString =
+      "mobile=" + mobile + "&email=" + email + "&message=" + message;
+    $.ajax({
+      type: "POST",
+      url: "contactinfo.php",
+      data: dataString,
+      cache: false,
+      success: function (response) {
+        $("#send_msg").fadeOut(350);
+        $("#notice").fadeIn(900);
+        $("#notice").css("display", "block");
+        document.getElementById("response").innerHTML = response;
+      },
+    });
+    return false;
+  });
+</script>

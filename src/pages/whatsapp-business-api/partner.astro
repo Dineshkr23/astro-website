@@ -1,0 +1,848 @@
+---
+import WhatsappLayout from "../../layouts/whatsapp-business-api/WhatsappLayout.astro";
+import "../../../public/whatsapp-business-api/css/partner.css";
+import LogoStrips from "../../components/LogoStrips.astro";
+import PhoneApp from "../../components/PhoneApp.astro";
+
+const metaTitle = "Become a WhatsApp API Partner | Emovur Partner Program";
+const metaDescription =
+  "Join Emovur’s partner program to resell WhatsApp Business API solutions and grow your digital services revenue.";
+const canonicalUrl = "https://emovur.com/whatsapp-business-api/partner";
+const keywords =
+  "whatsapp api reseller, become a partner, agency partner program, emovur partners, reseller program.";
+---
+
+<WhatsappLayout
+  title={metaTitle}
+  description={metaDescription}
+  canonical={canonicalUrl}
+  keywords={keywords}
+>
+  <div
+    class="container landing-form-section-container d-flex justify-content-between align-items-center"
+  >
+    <div
+      class="col-md-8 col-lg-6 col-xl-6 landing-form-section-content mr-md-5 mt-20"
+    >
+      <h6>
+        Partner with <span class="landing-form-section-content-partner"
+          >Emovur</span
+        >
+      </h6>
+      <p
+        style="color: #606060,font-family: Roboto, sans-serif;
+        font-weight: 300;font-size: 20px"
+      >
+        Generate a steady stream of revenue and enhance the <br />business value
+        you provide to your customers by<br />
+        adding WhatsApp Business API to your offerings.
+      </p>
+      <div class="btn-class" style="gap: 10px !important;margin-top: 10px">
+        <a href="https://partner.emovur.com/register" target="_blank">
+          <button
+            class="schedule-btn theme-btn"
+            id="lp-demo-btn"
+            style="padding: 10px 15px!important;"
+          >
+            Affiliate Signup
+          </button>
+        </a>
+        <a class="svg-link svg-link-white">
+          <button
+            class="schedule-btn-one theme-btn"
+            id="partner-button-id"
+            style="padding: 10px 15px!important;"
+            data-bs-toggle="modal"
+            data-bs-target="#partnerModal"
+          >
+            Request Call Back
+          </button>
+        </a>
+        <a
+          href="/whatsapp-business-api/book-demo"
+          target="_blank"
+          class="svg-link svg-link-white"
+        >
+          <button
+            class="schedule-btn-one theme-btn"
+            id="lp-sft-btn"
+            style="padding: 10px 15px!important;"
+          >
+            Book a demo
+          </button>
+        </a>
+      </div>
+    </div>
+    <div class="col-sm-10 col-md-8 col-lg-6 col-xl-6 ml-5">
+      <img
+        class="landing-img-whatsapp-landing-page-partnaer"
+        src="/whatsapp-business-api/images/partnerimgmain.webp"
+        width="90%"
+        height="100%"
+        alt="Whatsapp Landing Page"
+      />
+    </div>
+  </div>
+
+  <div
+    id="pricing-id"
+    class="price-info-section d-flex flex-column justify-content-center align-items-center mt-40"
+  >
+    <h6
+      style="color: #606060;font-family: Roboto, sans-serif;
+  font-weight: 300;font-size: 40px"
+    >
+      Curated partner models, tailor-made for you!
+    </h6>
+    <div class="heading-container">
+      <h4 style="font-size: 40px;text-align: center">50% Revenue Sharing</h4>
+      <span class="heading-underline experience-heading-underline"></span>
+    </div>
+    <div class="price-info-cards-container-partner">
+      <div
+        class="free-card-partner"
+        style="background-color: #ffffff;border-radius: 20px"
+      >
+        <div class="heading-container">
+          <h5 style="color: #0c9ffa;font-size: 25px;text-align: center">
+            Affiliate
+          </h5>
+        </div>
+        <p class="advanced-perks-text-partners">
+          Earn commissions by referring clients to our platform. Simply share
+          your unique affiliate link, leverage your influence and enjoy
+          recurring commission for every successful conversion.
+        </p>
+        <h6
+          style="font-size: 22px;font-weight:400;font-family: Roboto, sans-serif;margin-top: 10px"
+        >
+          Who can partner :
+        </h6>
+
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">Influencers</p>
+        </div>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">Content Creators</p>
+        </div>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">Consultants</p>
+        </div>
+        <a
+          href="https://admin.emovur.com/auth/register"
+          target="_blank"
+          style="margin-top: 30px;margin-bottom: 10px"
+        >
+          <button
+            class="pricing-cards-btn theme-btn"
+            id="lp-gs-btn"
+            style="border-radius: 4px !important;width:max-content"
+            >Become a affiliate</button
+          >
+        </a>
+        <!-- <button id="openLinkButton-1" class="free-trial-btn theme-btn">Start Free Trial</button> -->
+      </div>
+      <div
+        class="free-card-partner"
+        style="background-color: #ffffff;border-radius: 20px"
+      >
+        <div class="heading-container">
+          <h5 style="color: #0c9ffa;font-size: 25px;text-align: center">
+            Implementation Partner
+          </h5>
+        </div>
+        <p class="advanced-perks-text-partners">
+          Play a hands-on role in delivering value to clients. You'll assist
+          customers with setting up and optimizing their use of our platform,
+          ensuring they achieve their business goals.
+        </p>
+        <h6
+          style="font-size: 22px;font-weight:400;font-family: Roboto, sans-serif;margin-top: 10px"
+        >
+          Who can partner :
+        </h6>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">CRM/ERP Consultants</p>
+        </div>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">IT Service Providers</p>
+        </div>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">
+            SaaS Implementation Experts
+          </p>
+        </div>
+        <a
+          href="https://admin.emovur.com/auth/register"
+          target="_blank"
+          style="margin-top: 30px;margin-bottom: 10px"
+        >
+          <button
+            class="pricing-cards-btn theme-btn"
+            id="lp-gs-btn"
+            style="border-radius: 4px !important;width:max-content"
+            >Become a partner</button
+          >
+        </a>
+
+        <!-- <button id="openLinkButton-1" class="free-trial-btn theme-btn">Start Free Trial</button> -->
+      </div>
+      <div
+        class="free-card-partner"
+        style="background-color: #ffffff;border-radius: 20px"
+      >
+        <div class="heading-container">
+          <h5 style="color: #0c9ffa;font-size: 25px;text-align: center">
+            Whitelabel
+          </h5>
+        </div>
+        <p class="advanced-perks-text-partners">
+          Rebrand and offer our platform under your own name. Build a
+          comprehensive solution for your customers while maintaining complete
+          ownership of the client relationship.
+        </p>
+        <h6
+          style="font-size: 22px;font-weight:400;font-family: Roboto, sans-serif;margin-top: 10px"
+        >
+          Who can partner :
+        </h6>
+
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">
+            Digital Marketing Agencies
+          </p>
+        </div>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">Technology Providers</p>
+        </div>
+        <div class="free-card-partner-img-container">
+          <img
+            src="/whatsapp-business-api/images/tick mark.svg"
+            width="20px"
+            height="20px"
+            alt="Affiliate"
+          />
+          <p class="advanced-perks-text-partners-white">Software Resellers</p>
+        </div>
+        <a
+          href="https://admin.emovur.com/auth/register"
+          target="_blank"
+          style="margin-top: 30px;margin-bottom: 10px"
+        >
+          <button
+            class="pricing-cards-btn theme-btn"
+            id="lp-gs-btn"
+            style="border-radius: 4px !important;width:max-content"
+            >Become a partner</button
+          >
+        </a>
+
+        <!-- <button id="openLinkButton-1" class="free-trial-btn theme-btn">Start Free Trial</button> -->
+      </div>
+      <!-- <button id="openLinkButton-1" class="free-trial-btn theme-btn">Start Free Trial</button> -->
+    </div>
+  </div>
+
+  <div
+    class="container intergration-section-disktop-view"
+    style="margin-bottom: 120px;margin-top: 80px"
+  >
+    <div
+      class="memorable-experience-heading-container-partner mobile-testimonials-integration-heading"
+    >
+      <div class="heading-container">
+        <h3>Why become a Emovur Partner?</h3>
+        <span class="heading-underline experience-heading-underline"></span>
+      </div>
+    </div>
+    <p class="text-center-integration">
+      At Emovur, we believe successful partnerships are built on mutual respect,
+      trust, and shared goals. Here's why you should partner with Emovur today!
+    </p>
+    <!-- Second Row of Integration Logos -->
+    <div class="row justify-content-center mt-3 mb-3">
+      <div class="col-lg-6 col-md-6 col-12 mb-3">
+        <div class="integration_section-partner">
+          <h4 style="font-size: 30px;color: #0c9ffa">
+            Experience Before You Commit
+          </h4>
+          <p class="text-center-integration-partner">
+            "Get started risk-free with a 30-day free trial. Experience the full
+            power of your account, explore our partner portal, and test out our
+            responsive support. We want you to feel confident before you
+            commit."
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 mb-3">
+        <div class="integration_section-partner">
+          <h4 style="font-size: 30px;color: #0c9ffa">
+            Joint go-to-market (GTM) Efforts
+          </h4>
+          <p class="text-center-integration-partner">
+            "Amplify your sales and marketing impact with our sup- port. Our
+            creative team will help you craft compelling sales decks, brochures,
+            and other marketing materials. Plus, access a substantial marketing
+            development fund to leave a lasting impression on your clients."
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 mb-3">
+        <div class="integration_section-partner">
+          <h4 style="font-size: 30px;color: #0c9ffa">Generate More Revenue</h4>
+          <p class="text-center-integration-partner">
+            "Boost your earnings with dual benefits: enjoy kickbacks from Emovur
+            and retain 100% of the revenue for the val- ue-added services you
+            provide to your clients. The more you deliver, the more you earn.."
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-md-6 col-12 mb-3">
+        <div class="integration_section-partner">
+          <h4 style="font-size: 30px;color: #0c9ffa">
+            Dedicated Relationship Manager
+          </h4>
+          <p class="text-center-integration-partner">
+            "Stay connected and supported with a dedicated WhatsApp group. Your
+            Relationship Manager will be just a message away to ensure all your
+            queries and needs are addressed promptly."
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="partner-pricing-section">
+    <div class="container">
+      <h3>Our Impact in Numbers</h3>
+      <p style="margin-top: 5px">
+        Build, deploy, and manage AI agents at an enterprise scale.
+      </p>
+      <div class="api-for-btn">
+        <button>Get Started</button>
+        <img
+          src="/whatsapp-business-api/images/btn-arrow-api.png"
+          alt="build"
+          width="10px"
+          height="10px"
+        />
+      </div>
+      <div class="price-info-cards-container-partner-cards">
+        <div class="price-info-cards">
+          <div class="price-info-cards-content">
+            <h2>15+</h2>
+            <p>Countries</p>
+          </div>
+        </div>
+        <div class="price-info-cards">
+          <div class="price-info-cards-content">
+            <h2>100+</h2>
+            <p>Partners</p>
+          </div>
+        </div>
+        <div class="price-info-cards">
+          <div class="price-info-cards-content">
+            <h2>50M+</h2>
+            <p>Conversations</p>on platform
+          </div>
+        </div>
+        <div class="price-info-cards">
+          <div class="price-info-cards-content">
+            <h2>2K+</h2>
+            <p>Customers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div
+    class="container partners-logos justify-content-center align-items-center mt-100 d-md-flex d-lg-flex d-xl-flex"
+  >
+    <div class="col-md-8 col-lg-8 col-xl-8">
+      <h3 style="font-size: 40px;margin-bottom: 5px">
+        <span>Become a Partner Today</span>
+      </h3>
+      <p
+        style="color: #606060,font-family: Roboto, sans-serif;
+                font-weight: 300;font-size: 20px"
+      >
+        Signup Now, Share your Link and Start getting Partner Benifits
+        Instantly.
+      </p>
+    </div>
+    <div class="col-sm-10 col-md-4 col-lg-4 col-xl-4 ml-2">
+      <div class="btn-class" style="gap: 30px !important;">
+        <a href="https://partner.emovur.com/register" target="_blank">
+          <button
+            class="schedule-btn theme-btn"
+            id="lp-demo-btn"
+            style="padding: 10px 15px!important;"
+          >
+            Signup for Affiliate
+          </button>
+        </a>
+        <a
+          href="/whatsapp-business-api/book-demo"
+          target="_blank"
+          class="svg-link svg-link-white"
+        >
+          <button
+            class="schedule-btn-one theme-btn"
+            id="lp-sft-btn"
+            style="padding: 10px 15px!important;"
+          >
+            Book a Demo
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <LogoStrips />
+
+  <div
+    class="modal fade"
+    id="partnerModal"
+    tabindex="-1"
+    role="dialog"
+    aria-labelledby="signUpModalTitle"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content sign-up-modal-content">
+        <div
+          class="modal-header sign-up-modal-header"
+          style="border-bottom: none;"
+        >
+          <img
+            class="modal-title"
+            id="signUpModalTitle"
+            src="/whatsapp-business-api/images/Emovur + Whatsappnew.svg"
+            alt=""
+            style="width: 200px"
+          />
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="modal-form-image-container">
+            <div class="modal-chat-image">
+              <h3>Let's <span>grow</span><br />together</h3>
+              <div class="modal-features-container">
+                <img
+                  src="/whatsapp-business-api/images/Label.svg"
+                  alt="price"
+                />
+                <p>WhiteLabel</p>
+              </div>
+              <div class="modal-features-container">
+                <img src="/whatsapp-business-api/images/50.svg" alt="price" />
+                <p>50% Revenue Sharing</p>
+              </div>
+              <div class="modal-features-container">
+                <img
+                  src="/whatsapp-business-api/images/No markup new.svg"
+                  alt="price"
+                />
+                <p>No Markup</p>
+              </div>
+            </div>
+            <div class="modal-form-container">
+              <div id="partner-form-div">
+                <form class="modal-form" id="partner-form">
+                  <label for="name">Name</label><br />
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    required
+                  /><br />
+                  <label for="mobile_no">Phone Number</label><br />
+                  <input
+                    type="text"
+                    id="mobile_no"
+                    name="mobile_no"
+                    placeholder="Your number goes here"
+                    required
+                  /><br />
+                  <label for="partnership">Partnership</label><br />
+                  <select id="partnership" name="partnership">
+                    <option value="Select Partnership"
+                      >Select Partnership</option
+                    >
+                    <option value="Affiliate">Affiliate</option>
+                    <option value="WhiteLabel">WhiteLabel</option>
+                  </select>
+                  <button
+                    type="submit"
+                    class="pricing-cards-btn theme-btn signup-modal-button"
+                  >
+                    <i
+                      class="fa fa-spinner fa-spin"
+                      id="partner-form-loader"
+                      style="display: none;"></i>
+                    Request Call Back
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+              <div
+                id="partner-form-success-div"
+                style="display: none; text-align: center"
+              >
+                <div class="success-class">
+                  <img
+                    src="/whatsapp-business-api/images/Jan43.webp"
+                    alt="Submitted Successfully"
+                    style="width: 150px"
+                  />
+                  <p>
+                    Submitted Successfully! <br />One of our expert will soon
+                    get in touch with you.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="faq-page faq-tab-wrapper" style="padding-top: 100px;">
+    <div class="container">
+      <div class="theme-title-one mb-80">
+        <h2 class="main-title underline pl-3 pl-lg-0 text-left text-lg-center">
+          <span>Frequently Asked Questions</span>
+        </h2>
+      </div>
+      <!-- /.theme-title-one -->
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- ================== FAQ Panel ================ -->
+          <div class="faq-panel">
+            <div class="panel-group theme-accordion" id="accordion">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapse1"
+                    >
+                      How do I join the Emovur Partner Program?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      If you are interested in becoming a Emovur partner, please
+                      sign up using the form and our team will get in touch with
+                      you!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 1 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapse3"
+                    >
+                      Are there different partnership tiers offered by Emovur?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      Referral Partners - If you’re willing to use your social
+                      presence, community, and influence to deliver high-quality
+                      leads, opt for this option. Reseller Partners - If you’d
+                      like to become the voice of Emovur in your local community
+                      and territory and drive our revenue, this is for you!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 3 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapse4"
+                    >
+                      Do Emovur partnership programs require a membership fee?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      There is currently no cost to join our partnership
+                      program. We would like to keep it free of cost unless
+                      there is a genuine need that demands a partnership. We
+                      believe in working hand-in-hand with our partners to grow
+                      together
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 4 -->
+            </div>
+            <!-- end #accordion -->
+          </div>
+          <!-- End of .faq-panel -->
+        </div>
+        <!-- /.col- -->
+        <div class="col-lg-6">
+          <!-- ================== FAQ Panel ================ -->
+          <div class="faq-panel">
+            <div class="panel-group theme-accordion" id="accordion2">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion2"
+                      href="#collapse44"
+                    >
+                      Do you offer dedicated support for partners?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse44" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      We offer a dedicated partner manager to every partner we
+                      onboard and you could reach out to support@emouvr.com to
+                      reach our partner team.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 4 -->
+
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title align-center justify-content-center">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion2"
+                      href="#collapse33"
+                    >
+                      How much commission can I earn as a Emovur partner?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse33" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      While the exact commission would vary based on your type
+                      of partnership, you can earn a minimum of 20% revenue
+                      share for the lifetime of the customer on Emovur.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 3 -->
+
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion2"
+                      href="#collapse11"
+                    >
+                      What agreements should I sign to seal the partnership
+                      deal?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      Once you are happy with the benefits of our partner
+                      program and decide to get on board, we’ll sign a mutually
+                      beneficial partnership agreement that helps us grow
+                      together.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 1 -->
+            </div>
+            <!-- end #accordion2 -->
+          </div>
+          <!-- End of .faq-panel -->
+        </div>
+        <!-- /.col- -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+  <!-- /.faq-page -->
+
+  <div class="last-strip-container" style="padding-top: 100px">
+    <div class="container">
+      <div class="last-strip-main">
+        <div>
+          <div class="brands-main-last" style="margin-bottom: 15px">
+            <h6 style="font-weight:300;font-size:1.7rem">Get Started with</h6>
+            <h6 style="font-weight:500;font-size:1.7rem;color:#0c9ffa">
+              Emovur
+            </h6>
+            <h6 style="font-weight:300;font-size:1.7rem">Today</h6>
+          </div>
+          <div class="last-section-tick-mark">
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Engage & Re-engage Prospects</p>
+            </div>
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Drive Sales</p>
+            </div>
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Deliver higher CSAT</p>
+            </div>
+            <div class="tick-mark-last-section">
+              <img
+                src="/whatsapp-business-api/images/Green tick.svg"
+                alt="Green Tick"
+                style="width: 13px"
+              />
+              <p style="font-size: 1rem">Support at Scale</p>
+            </div>
+          </div>
+          <div
+            class="read-me"
+            style="margin-top: 20px;background-color:#fff;border:1px solid #0c9ffa"
+          >
+            <p>Try Emovur for Free</p>
+            <img
+              src="/whatsapp-business-api/images/Objects.png"
+              alt="section-page-1"
+              style="width: 7px;"
+            />
+          </div>
+        </div>
+        <img
+          src="/whatsapp-business-api/images/plat-last-section.png"
+          alt="heart"
+          style="width:20%;position:absolute;right:40px;bottom:0"
+        />
+      </div>
+    </div>
+  </div>
+
+  <PhoneApp />
+
+  <!-- mobile footer sticky starts -->
+  <div class="mobile-sticky-footer-container">
+    <!-- <div>
+            <a href="tel:+919997774255"><i class="fa fa-phone" aria-hidden="true" style="font-size: 32px;"></i></a>
+        </div>
+       
+        <div>
+            <a href="https://wa.link/egi1ga"><i class="fa fa-whatsapp" aria-hidden="true"
+                    style="font-size: 35px;"></i></a>
+        </div> -->
+    <div>
+      <a
+        href="https://admin.emovur.com/auth/register"
+        target="_blank"
+        id="stky-sft-mobile-btn"
+      >
+        Start Free Trial
+      </a>
+    </div>
+    <div>
+      <a
+        href="/whatsapp-business-api/book-demo"
+        target="_blank"
+        id="stky-b1d-mobile-btn"
+      >
+        Book 1-1 Demo
+      </a>
+      <!-- <Button id="talk-to-expert-mobile">
+                Book 1-1 Demo
+            </Button> -->
+    </div>
+  </div>
+  <!-- mobile footer sticky ends -->
+</WhatsappLayout>

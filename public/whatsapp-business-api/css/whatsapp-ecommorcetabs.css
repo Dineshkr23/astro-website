@@ -1,0 +1,84 @@
+/* Page Layout */
+.broadcast-page-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  gap: 50px;
+}
+
+/* Sidebar Menu */
+.broadcast-sidebar-menu {
+  width: 30%;
+  /* background: rgba(12, 159, 250, 0.05); */
+  padding: 0 20px;
+  border-radius: 30px;
+  overflow-y: auto;
+}
+
+.broadcast-sidebar-tab {
+  width: 100%;
+  height: auto;
+  padding: 5px 10px;
+  margin: 10px 0;
+  text-align: center;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #444;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+  border: 1px solid #e8e8e8;
+}
+
+.broadcast-sidebar-tab:hover {
+  background: #dde8ff;
+}
+
+.broadcast-sidebar-tab.active-broadcast-tab {
+  background: #0c9ffa;
+  color: white;
+  border: none;
+}
+
+.broadcast-tab-container {
+  width: 100%; /* Ensures full width for the container */
+  border: 1px solid #0c9ffa;
+  border-radius: 30px;
+  padding: 50px;
+  max-width: 100%;
+  position: relative;
+}
+
+/* Tab Content */
+.broadcast-tab-content {
+  display: none;
+  padding: 15px;
+  width: 100%;
+  background: #fff;
+  height: 100%;
+}
+
+.broadcast-tab-content.active-broadcast-content {
+  border-radius: 30px;
+  width: 100%; /* Matches the width of the container */
+}
+
+.active-broadcast-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Optional: Ensures images scale proportionally and do not exceed the container width */
+.broadcast-tab-content img {
+  height: auto;
+  object-fit: contain; /* Keeps aspect ratio intact */
+}
+
+.tabs-contents-image-part {
+  width: 42%;
+  position: absolute;
+  right: 0%;
+  top: -30%;
+}

@@ -1,0 +1,90 @@
+---
+import "../../public/whatsapp-business-api/css/footer-slider.css";
+---
+
+<style>
+  .mainpage-logo-strip {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .slider-container {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 30px;
+  }
+
+  .slider-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -30px;
+    width: 120px; /* even wider */
+    height: 100%;
+    background: linear-gradient(
+      to right,
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0)
+    );
+    z-index: 2;
+    pointer-events: none;
+    filter: blur(12px); /* heavy blur for super soft spread */
+  }
+
+  @media screen and (max-width: 768px) {
+    .slider-container::before {
+      content: "";
+      position: relative;
+      /* top: 0;
+    left: -30px;
+    width: 120px; even wider */
+      height: 100%;
+      background: none;
+      z-index: 2;
+      pointer-events: none;
+      filter: none; /* heavy blur for super soft spread */
+    }
+  }
+</style>
+
+<div
+  class="container aos-init aos-animate"
+  data-aos="fade-up"
+  data-aos-delay="200"
+>
+  <div class="mainpage-logo-strip">
+    <div class="happy-client d-none d-sm-block">
+      <img src="/images/mainlogo.png" alt-="" width="350px" />
+    </div>
+    <div class="slider-container">
+      <div class="logo-slider">
+        <div class="logo-track">
+          <!-- Original Logos -->
+          <img src="/images/logo/bobcat.webp" alt="brands" />
+          <img src="/images/logo/doosan.webp" alt="brands" />
+          <img src="/images/logo/exe.webp" alt="brands" />
+          <img src="/images/logo/fivestarlogo.webp" alt="brands" />
+          <img src="/images/logo/fusion.webp" alt="brands" />
+          <img src="/images/logo/RNS.webp" alt="brands" />
+          <img src="/images/logo/savetheyounglogo.webp" alt="brands" />
+          <img src="/images/logo/shrutimotors.webp" alt="brands" />
+          <img src="/images/logo/techno.webp" alt="brands" />
+          <img src="/images/logo/zlearning.webp" alt="brands" />
+
+          <!-- Duplicate Logos for Seamless Effect -->
+          <img src="/images/logo/bobcat.webp" alt="brands" />
+          <img src="/images/logo/doosan.webp" alt="brands" />
+          <img src="/images/logo/exe.webp" alt="brands" />
+          <img src="/images/logo/fivestarlogo.webp" alt="brands" />
+          <img src="/images/logo/fusion.webp" alt="brands" />
+          <img src="/images/logo/RNS.webp" alt="brands" />
+          <img src="/images/logo/savetheyounglogo.webp" alt="brands" />
+          <img src="/images/logo/shrutimotors.webp" alt="brands" />
+          <img src="/images/logo/techno.webp" alt="brands" />
+          <img src="/images/logo/zlearning.webp" alt="brands" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

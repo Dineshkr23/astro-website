@@ -1,0 +1,2072 @@
+---
+import Layout from "../layouts/Layout.astro";
+import "../../public/css/home-page.css";
+import "../../public/css/home-page-tabs.css";
+import LogoStrips from "../components/LogoStrips.astro";
+import LogoStripsMainPage from "../components/LogoStripsMainPage.astro";
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const metaTitle = "Emovur | Hyperlocal Digital Marketing Agency In India";
+const metaDescription =
+  "Emovur is a hyperlocal marketing agency in India helping brands connect with customers in their neighborhoods through targeted digital strategies. Boost footfalls, calls, and conversions.";
+const canonicalUrl = "https://emovur.com";
+const keywords =
+  "Digital marketing company, Digital marketing services, Marketing agency, Hyperlocal marketing agency, Creative Agency.";
+---
+
+<style>
+  .landing-img-container .landing-img-potrait img {
+    width: 40vw;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .landing-img-background {
+    background: none;
+  }
+</style>
+
+<Layout
+  title={metaTitle}
+  headerType="main"
+  description={metaDescription}
+  canonical={canonicalUrl}
+  keywords={keywords}
+>
+  <div
+    class="rogan-hero-section rogan-hero-four flex-direction-column justify-content-center align-items-center pos-r"
+    style="width: 100vw; height:100vh;"
+  >
+    <div
+      id="landing-carousel-indicators"
+      class="carousel slide w-100 flex-direction-column justify-content-center align-items-center"
+      style="height: 100vh;"
+      data-ride="carousel"
+      data-pause="false"
+      data-interval="3000"
+    >
+      <!-- <div class="carousel-indicators">
+        <li
+          data-target="#landing-carousel-indicators"
+          data-slide-to="0"
+          class="active"
+        >
+        </li>
+        <li data-target="#landing-carousel-indicators" data-slide-to="1"></li>
+        <li data-target="#landing-carousel-indicators" data-slide-to="2"></li>
+        <li data-target="#landing-carousel-indicators" data-slide-to="3"></li>
+        <li data-target="#landing-carousel-indicators" data-slide-to="4"></li>
+      </div> -->
+
+      <div class="carousel-indicators d-none d-sm-flex">
+        <span class="indicator"></span>
+        <span class="text">We are here to</span>
+        <ul class="carousel-list">
+          <li
+            data-target="#landing-carousel-indicators"
+            data-slide-to="0"
+            class="active"
+          >
+            Marketing Solution
+          </li>
+          <li data-target="#landing-carousel-indicators" data-slide-to="1">
+            WhatsApp API
+          </li>
+          <li data-target="#landing-carousel-indicators" data-slide-to="2">
+            Strategy & Consulting
+          </li>
+          <li data-target="#landing-carousel-indicators" data-slide-to="3">
+            Marketing & Growth
+          </li>
+          <li data-target="#landing-carousel-indicators" data-slide-to="4">
+            Creative
+          </li>
+        </ul>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active gradiant-bg">
+          <div class="container vw-container">
+            <div class="row justify-content-center align-items-center pt-xs-10">
+              <div class="col-md-6 col-lg-6 col-12 home-main-part">
+                <h1
+                  class="banner-main-title title-1 underline pt-15 pb-20 md-pt-10 md-pb-30 wow fadeInUp animated"
+                  data-wow-delay="0.4s"
+                >
+                  <span class="landing-txt">Hyperlocal</span><br /> Digital Marketing<br
+                  /> Solution
+                </h1>
+                <p
+                  class="whatsapp-paragraph pb-15 wow fadeInUp animated"
+                  data-wow-delay="0.9s"
+                >
+                  Transforming how brands establish, and scale their digital
+                  presence
+                </p>
+                <a
+                  href="/contact"
+                  class="theme-btn solid-button-one button-orange wow fadeInLeft animated d-none d-sm-block main-section-button"
+                  data-wow-delay="1.5s">Know more</a
+                >
+              </div>
+              <div class="col-md-6 col-lg-6 col-12">
+                <div class="landing-img-container pos-r">
+                  <div class="landing-img-potrait">
+                    <img
+                      loading="lazy"
+                      src="/images/landing/hero-section-1.png"
+                      alt="Linus Torvalds - linux"
+                    />
+                  </div>
+                  <div class="landing-img-background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <div class="carousel-item gradiant-bg">
+          <div class="container vw-container">
+            <div class="row justify-content-center align-items-center pt-xs-10">
+              <div class="col-md-6 col-lg-6 col-12 home-main-part">
+                <h1
+                  class="banner-main-title title-1 underline pt-15 pb-20 md-pt-10 md-pb-30 wow fadeInUp animated"
+                  data-wow-delay="0.4s"
+                >
+                  <span class="landing-txt">WhatsApp API</span><br /> Future of Customer<br
+                  /> Engagement
+                </h1>
+                <p
+                  class="whatsapp-paragraph pb-15 wow fadeInUp animated"
+                  data-wow-delay="0.9s"
+                >
+                  Transforming how brands establish, and scale their digital
+                  presence
+                </p>
+                <a
+                  href="/contact"
+                  class="theme-btn solid-button-one button-orange wow fadeInLeft animated d-none d-sm-block main-section-button"
+                  data-wow-delay="1.5s">Know more</a
+                >
+              </div>
+              <div class="col-md-6 col-12 col-lg-6">
+                <div class="landing-img-container pos-r">
+                  <div class="landing-img-potrait">
+                    <img
+                      loading="lazy"
+                      src="/images/landing/hero-section-2.png"
+                      alt="Charles geschke - web design and development"
+                    />
+                  </div>
+                  <div class="landing-img-background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <div class="carousel-item gradiant-bg">
+          <div class="container vw-container">
+            <div class="row justify-content-center align-items-center pt-xs-10">
+              <div class="col-md-6 col-lg-6 col-12 home-main-part">
+                <h1
+                  class="banner-main-title title-1 underline pt-15 pb-20 md-pt-10 md-pb-30 wow fadeInUp animated"
+                  data-wow-delay="0.4s"
+                >
+                  <span class="landing-txt">Strategy</span><br /> Your Blueprint<br
+                  /> for Success
+                </h1>
+                <p
+                  class="whatsapp-paragraph pb-15 wow fadeInUp animated"
+                  data-wow-delay="0.9s"
+                >
+                  Transforming how brands establish, and scale their digital
+                  presence
+                </p>
+                <a
+                  href="/services/social-media-marketing"
+                  class="theme-btn solid-button-one button-orange wow fadeInLeft animated d-none d-sm-block main-section-button"
+                  data-wow-delay="1.5s">Know more</a
+                >
+              </div>
+              <div class="col-md-6 col-12 col-lg-6">
+                <div class="landing-img-container pos-r">
+                  <div class="landing-img-potrait">
+                    <img
+                      loading="lazy"
+                      src="/images/landing/hero-section-3.png"
+                      alt="philip kotler - father of marketing"
+                    />
+                  </div>
+                  <div class="landing-img-background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <div class="carousel-item gradiant-bg">
+          <div class="container vw-container">
+            <div class="row justify-content-center align-items-center pt-xs-10">
+              <div class="col-md-6 col-lg-6 col-12 home-main-part">
+                <h1
+                  class="banner-main-title title-1 underline pt-15 pb-20 md-pt-10 md-pb-30 wow fadeInUp animated"
+                  data-wow-delay="0.4s"
+                >
+                  <span class="landing-txt">Marketing & Growth</span><br /> Performance-Driven,<br
+                  /> Result Focused
+                </h1>
+                <p
+                  class="whatsapp-paragraph pb-15 wow fadeInUp animated"
+                  data-wow-delay="0.9s"
+                >
+                  Transforming how brands establish, and scale their digital
+                  presence
+                </p>
+                <a
+                  href="/contact"
+                  class="theme-btn solid-button-one button-orange wow fadeInLeft animated d-none d-sm-block main-section-button"
+                  data-wow-delay="1.5s">Know more</a
+                >
+              </div>
+              <div class="col-md-6 col-12 col-lg-6">
+                <div class="landing-img-container pos-r">
+                  <div class="landing-img-potrait">
+                    <img
+                      loading="lazy"
+                      src="/images/landing/hero-section-4.png"
+                      alt="Charles geschke - web design and development"
+                    />
+                  </div>
+                  <div class="landing-img-background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+        <div class="carousel-item gradiant-bg">
+          <div class="container vw-container">
+            <div class="row justify-content-center align-items-center pt-xs-10">
+              <div class="col-md-6 col-lg-6 col-12 home-main-part">
+                <h1
+                  class="banner-main-title title-1 underline pt-15 pb-20 md-pt-10 md-pb-30 wow fadeInUp animated"
+                  data-wow-delay="0.4s"
+                >
+                  <span class="landing-txt">Creative Design</span><br /> That Captures
+                  and<br /> Converts
+                </h1>
+                <p
+                  class="whatsapp-paragraph pb-15 wow fadeInUp animated"
+                  data-wow-delay="0.9s"
+                >
+                  Transforming how brands establish, and scale their digital
+                  presence
+                </p>
+                <a
+                  href="/contact"
+                  class="theme-btn solid-button-one button-orange wow fadeInLeft animated d-none d-sm-block main-section-button"
+                  data-wow-delay="1.5s">Know more</a
+                >
+              </div>
+              <div class="col-md-6 col-12 col-lg-6">
+                <div class="landing-img-container pos-r">
+                  <div class="landing-img-potrait">
+                    <img
+                      loading="lazy"
+                      src="/images/landing/hero-section-5.png"
+                      alt="Charles geschke - web design and development"
+                    />
+                  </div>
+                  <div class="landing-img-background"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.container -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- <div class="container"> -->
+  <div class="container-fluid d-none d-sm-flex">
+    <div class="left-side">
+      <div
+        class="section"
+        style="margin-top:-50px"
+        data-content='<div class="vedio-what-we-do"><video class="vedio-section" autoplay loop muted playsinline>
+  <source src="/images/video-service.mp4" type="video/mp4">
+</video></div>'
+      >
+        <div class="scroling-section-part-1">
+          <div class="scroling-section-part-1-main">
+            <div class="circle-bg"></div>
+            <h6>SERVICES</h6>
+          </div>
+          <h2 style="margin-top: 10px;font-size: 4rem">What we do</h2>
+        </div>
+      </div>
+      <div
+        class="section"
+        data-content='
+        <div class="single-services-section-1">
+          <div class="scroling-wrapper-services">
+              <div class="scroling-img-1">
+                <img class="img-services-slide" src="/images/SC-1.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-2.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-3.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-1.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-2.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-3.png" alt="scrolling-img-1" />
+
+              </div>
+          </div>
+          <div class="scroling-wrapper-services">
+              <div class="scroling-img-2">
+                <img class="img-services-slide" src="/images/SC-4.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-5.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-6.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-4.png" alt="scrolling-img-1" />
+                 <img class="img-services-slide" src="/images/SC-5.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/SC-6.png" alt="scrolling-img-1" />
+              </div>
+          </div>
+        </div>'
+      >
+        <div>
+          <div>
+            <div class="scroling-section-part-2">
+              <h3>Strategy & Consulting</h3>
+              <p>
+                Strategic thinking meets data-driven execution — guiding your
+                business towards sustainable growth.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Digital Strategy & Planning</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Lead Generation & Funnels</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Analytics & Reporting</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Reputation Management</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">AI & Automation Consulting</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        data-content='
+        <div class="single-services-section-1">
+          <div class="scroling-wrapper-services">
+              <div class="scroling-img-1">
+                <img class="img-services-slide" src="/images/Gm-1.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-2.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-3.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-1.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-2.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-3.png" alt="scrolling-img-1" />
+              </div>
+          </div>
+          <div class="scroling-wrapper-services">
+              <div class="scroling-img-2">
+                <img class="img-services-slide" src="/images/Gm-4.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-5.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-6.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-4.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-5.png" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/Gm-6.png" alt="scrolling-img-1" />
+                
+              </div>
+          </div>
+        </div>'
+      >
+        <div>
+          <div>
+            <!-- <div class="scroling-img-1-services">
+              <img
+                src="/images/whatsappIconstabs.svg"
+                width="30px"
+                height="30px"
+              />
+            </div> -->
+            <div class="scroling-section-part-2">
+              <h3>Growth Marketing</h3>
+              <p>
+                Performance-driven marketing—from awareness to
+                acquisition—designed to drive real business outcomes.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">SEO & Organic Growth</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Paid Ads | PPC</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Email & WhatsApp Marketing</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Social Media Management</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">
+                      Affiliate & Influencer Marketing
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        data-content='
+        <div class="single-services-section-1">
+          <div class="scroling-wrapper-services">
+               <div class="scroling-img-2" style="width: 300px;">
+                <img class="img-services-slide" src="/images/services-3.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/sevices-4.jpeg" alt="scrolling-img-1" />
+              </div>
+          </div>
+          <div class="scroling-wrapper-services" style="width: 300px;">
+              <div class="scroling-img-1">
+                <img class="img-services-slide" src="/images/services-8.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/service-7.png" alt="scrolling-img-1" />
+              </div>
+          </div>
+          
+          <div class="scroling-wrapper-services" style="width: 300px;">
+              <div class="scroling-img-2">
+                <img class="img-services-slide" src="/images/service-1.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/service-2.jpeg" alt="scrolling-img-1" />
+              </div>
+          </div>
+        </div>'
+      >
+        <div>
+          <div>
+            <!-- <div class="scroling-img-1-services">
+              <img
+                src="/images/whatsappIconstabs.svg"
+                width="30px"
+                height="30px"
+              />
+            </div> -->
+            <div class="scroling-section-part-2">
+              <h3>Creative</h3>
+              <p>
+                Impactful visuals and compelling storytelling that captivate,
+                engage, and drive brand success.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Branding & Identity</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Graphic Design</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Video & Motion Graphics</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Content Writing</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Social Media Content</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="section"
+        data-content='
+        <div class="single-services-section-1">
+          <div class="scroling-wrapper-services">
+              <div class="scroling-img-1">
+              <img class="img-services-slide" src="/images/devlopment-6.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-1.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-6.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-2.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-1.jpeg" alt="scrolling-img-1" />
+                
+                <img class="img-services-slide" src="/images/devlopment-2.jpeg" alt="scrolling-img-1" />
+              </div>
+          </div>
+          <div class="scroling-wrapper-services">
+              <div class="scroling-img-2">
+                <img class="img-services-slide" src="/images/devlopment-3.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-4.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-5.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-3.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-4.jpeg" alt="scrolling-img-1" />
+                <img class="img-services-slide" src="/images/devlopment-5.jpeg" alt="scrolling-img-1" />
+              </div>
+          </div>
+        </div>'
+      >
+        <div>
+          <div>
+            <!-- <div class="scroling-img-1-services">
+              <img
+                src="/images/whatsappIconstabs.svg"
+                width="30px"
+                height="30px"
+              />
+            </div> -->
+            <div class="scroling-section-part-2">
+              <h3>Development</h3>
+              <p>
+                Robust, scalable, and high-performing digital solutions that
+                power business efficiency and growth.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Website Development</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">E-commerce Solutions</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Landing Pages & Funnels</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Custom Web Applications</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Database & CRM Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="dynamic-content">
+        <!-- Content will be injected here -->
+        <div class="vedio-what-we-do">
+          <video class="vedio-section" autoplay loop muted playsinline>
+            <source src="/images/video-service.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- </div> -->
+
+  <!-- mobile view of service start-->
+  <div class="container-fluid d-block d-sm-none container">
+    <div class="left-side">
+      <div class="section" style="margin-top:-50px">
+        <div class="scroling-section-part-1">
+          <div class="scroling-section-part-1-main">
+            <div class="circle-bg"></div>
+            <h6>SERVICES</h6>
+          </div>
+          <h2 style="margin-top: 10px;font-size: 2.5rem">What we do</h2>
+        </div>
+      </div>
+      <div class="vedio-what-we-do">
+        <video class="vedio-section" autoplay loop muted playsinline>
+          <source src="/images/video-service.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+      <div class="section">
+        <div>
+          <div>
+            <div class="scroling-section-part-2">
+              <h3 class="services-mobile-view-heading">
+                Strategy & Consulting
+              </h3>
+              <p>
+                Strategic thinking meets data-driven execution — guiding your
+                business towards sustainable growth.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Digital Strategy & Planning</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Lead Generation & Funnels</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Analytics & Reporting</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Reputation Management</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">AI & Automation Consulting</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-services-section-1">
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-1">
+            <img
+              class="img-services-slide"
+              src="/images/SC-1.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-2.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-3.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-1.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-2.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-3.png"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-2">
+            <img
+              class="img-services-slide"
+              src="/images/SC-4.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-5.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-6.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-4.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-5.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/SC-6.png"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div>
+          <div>
+            <!-- <div class="scroling-img-1-services">
+              <img
+                src="/images/whatsappIconstabs.svg"
+                width="30px"
+                height="30px"
+              />
+            </div> -->
+            <div class="scroling-section-part-2">
+              <h3 class="services-mobile-view-heading">Growth Marketing</h3>
+              <p>
+                Performance-driven marketing—from awareness to
+                acquisition—designed to drive real business outcomes.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">SEO & Organic Growth</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Paid Ads | PPC</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Email & WhatsApp Marketing</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Social Media Management</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">
+                      Affiliate & Influencer Marketing
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-services-section-1">
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-1">
+            <img
+              class="img-services-slide"
+              src="/images/Gm-1.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-2.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-3.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-1.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-2.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-3.png"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-2">
+            <img
+              class="img-services-slide"
+              src="/images/Gm-4.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-5.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-6.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-4.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-5.png"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/Gm-6.png"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div>
+          <div>
+            <!-- <div class="scroling-img-1-services">
+              <img
+                src="/images/whatsappIconstabs.svg"
+                width="30px"
+                height="30px"
+              />
+            </div> -->
+            <div class="scroling-section-part-2">
+              <h3 class="services-mobile-view-heading">Creative</h3>
+              <p>
+                Impactful visuals and compelling storytelling that captivate,
+                engage, and drive brand success.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Branding & Identity</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Graphic Design</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Video & Motion Graphics</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Content Writing</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Social Media Content</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-services-section-1">
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-2" style="width: 300px;">
+            <img
+              class="img-services-slide"
+              src="/images/services-3.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/sevices-4.jpeg"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+        <div class="scroling-wrapper-services" style="width: 300px;">
+          <div class="scroling-img-1">
+            <img
+              class="img-services-slide"
+              src="/images/services-8.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/service-7.png"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+
+        <div class="scroling-wrapper-services" style="width: 300px;">
+          <div class="scroling-img-2">
+            <img
+              class="img-services-slide"
+              src="/images/service-1.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/service-2.jpeg"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="section">
+        <div>
+          <div>
+            <!-- <div class="scroling-img-1-services">
+              <img
+                src="/images/whatsappIconstabs.svg"
+                width="30px"
+                height="30px"
+              />
+            </div> -->
+            <div class="scroling-section-part-2">
+              <h3 class="services-mobile-view-heading">Development</h3>
+              <p>
+                Robust, scalable, and high-performing digital solutions that
+                power business efficiency and growth.
+              </p>
+              <div class="scroling-points-services">
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Website Development</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">E-commerce Solutions</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Landing Pages & Funnels</p>
+                  </div>
+                </div>
+                <div class="scroling-img-2-main-part">
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      alt="rightmark"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    />
+                    <p style="margin-top: 0;">Custom Web Applications</p>
+                  </div>
+                  <div class="scroling-img-2-services">
+                    <img
+                      src="/images/rightmark.svg"
+                      width="20px"
+                      height="20px"
+                      style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                      alt="rightmark"
+                    />
+                    <p style="margin-top: 0;">Database & CRM Development</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="single-services-section-1">
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-1">
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-6.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-1.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-6.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-2.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-1.jpeg"
+              alt="scrolling-img-1"
+            />
+
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-2.jpeg"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+        <div class="scroling-wrapper-services">
+          <div class="scroling-img-2">
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-3.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-4.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-5.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-3.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-4.jpeg"
+              alt="scrolling-img-1"
+            />
+            <img
+              class="img-services-slide"
+              src="/images/devlopment-5.jpeg"
+              alt="scrolling-img-1"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- mobile view of service end-->
+
+  <LogoStripsMainPage />
+
+  <!-- tabs start-->
+  <div class="features-section-color">
+    <div
+      id="features-id"
+      class="container features-container tabs-container-section"
+    >
+      <div class="memorable-experience-heading-container-cards-parts">
+        <div
+          class="heading-container"
+          style="text-align: center;margin-top: 30px !important"
+        >
+          <h2
+            class="digital-home-heading"
+            style="color: #0c9ffa !important;font-family: Roboto, sans-serif;font-weight: 600;font-size: 3rem"
+          >
+            Your Digital Marketing
+          </h2>
+          <h3
+            class="memorable-experience-heading-what-para"
+            style="color: #000000 !important;font-family: Roboto, sans-serif;font-weight: 500;font-size: 3rem"
+          >
+            Command Center
+          </h3>
+          <span
+            class="heading-underline experience-heading-underline d-none d-sm-inline"
+          ></span>
+        </div>
+      </div>
+      <div class="whatsapp-flows-container d-none d-sm-block">
+        <div class="whatsapp-flows-tabs">
+          <div
+            class="whatsapp-flows-tab whatsapp-flows-active"
+            data-tab="qualified-leads"
+          >
+            <img
+              src="/images/whatsappIconstabs.svg"
+              width="35px"
+              height="35px"
+              alt="rightmark"
+            />
+            <button>WhatsApp API</button>
+          </div>
+          <div class="whatsapp-flows-tab" data-tab="appointment-booking">
+            <img
+              src="/images/massageIcontabs.svg"
+              width="35px"
+              height="35px"
+              alt="rightmark"
+            />
+            <button>Chat Inbox</button>
+          </div>
+
+          <div class="whatsapp-flows-tab" data-tab="collect-feedback">
+            <img
+              src="/images/teamIcontabs.svg"
+              width="35px"
+              height="35px"
+              alt="rightmark"
+            />
+            <button>CRM</button>
+          </div>
+          <div class="whatsapp-flows-tab" data-tab="event-registration">
+            <img
+              src="/images/sarchIcontabs.svg"
+              width="35px"
+              height="35px"
+              alt="rightmark"
+            />
+            <button>Review</button>
+          </div>
+          <div class="whatsapp-flows-tab" data-tab="event-registration-tab">
+            <img
+              src="/images/addimageIcontabs.svg"
+              width="35px"
+              height="35px"
+              alt="rightmark"
+            />
+            <button>Social Post</button>
+          </div>
+        </div>
+
+        <div class="whatsapp-flows-content" id="qualified-leads">
+          <div>
+            <img src="/images/emovurwhatsapptab.webp" alt="rightmark" />
+          </div>
+        </div>
+
+        <div class="whatsapp-flows-content hidden" id="appointment-booking">
+          <div>
+            <img
+              src="/whatsapp-business-api/images/leverage@4x.webp"
+              alt="rightmark"
+            />
+          </div>
+        </div>
+
+        <div class="whatsapp-flows-content hidden" id="collect-feedback">
+          <div>
+            <img src="/images/emovurcrmtab.webp" alt="rightmark" />
+          </div>
+        </div>
+
+        <div class="whatsapp-flows-content hidden" id="event-registration">
+          <div>
+            <img src="/images/emovurreview.webp" alt="rightmark" />
+          </div>
+        </div>
+
+        <div class="whatsapp-flows-content hidden" id="event-registration-tab">
+          <div>
+            <img src="/images/socialpost.webp" alt="rightmark" />
+          </div>
+        </div>
+      </div>
+      <div class="mobiel-tab-img d-block d-sm-none">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide built-for-enterpurner-features-parts">
+              <img
+                src="/images/emovurwhatsapptab.webp"
+                class="mobile-view-1-img"
+                alt="mobile-view-1-img"
+              />
+            </div>
+            <div class="swiper-slide built-for-enterpurner-features-parts">
+              <img
+                src="/whatsapp-business-api/images/leverage@4x.webp"
+                class="mobile-view-1-img"
+                alt="mobile-view-1-img"
+              />
+            </div>
+            <div class="swiper-slide built-for-enterpurner-features-parts">
+              <img
+                src="/images/emovurcrmtab.webp"
+                class="mobile-view-1-img"
+                alt="mobile-view-1-img"
+              />
+            </div>
+            <div class="swiper-slide built-for-enterpurner-features-parts">
+              <img
+                src="/images/emovurreview.webp"
+                class="mobile-view-1-img"
+                alt="mobile-view-1-img"
+              />
+            </div>
+            <div class="swiper-slide built-for-enterpurner-features-parts">
+              <img
+                src="/images/socialpost.webp"
+                class="mobile-view-1-img"
+                alt="mobile-view-1-img"
+              />
+            </div>
+          </div>
+          <!-- Navigation buttons -->
+          <!-- Navigation buttons -->
+          <div class="swiper-button-prev"><span>&#10094;</span></div>
+          <div class="swiper-button-next"><span>&#10095;</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- tabs end -->
+
+  <!-- project start -->
+  <div class="project-section">
+    <div class="container">
+      <div class="project-container-heading">
+        <h2
+          style="color: #0c9ffa !important;font-family: Roboto, sans-serif;font-weight: 600;font-size: 3rem;"
+        >
+          Projects
+        </h2>
+      </div>
+      <div class="project-container-cards">
+        <div class="project-card-1">
+          <div class="project-section-card-text">
+            <div class="scroling-section-part-2">
+              <h4 class="project-card-heading">Doosan Bobcat India</h4>
+              <p>
+                Doosan Bobcat India worked with Emovur to run targeted campaigns
+                that enhanced digital strategy, improved visibility, and boosted
+                dealer engagement.
+              </p>
+              <div class="card-section-circle">
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>Precision targeting for dealer network</p>
+                </div>
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>+60% increase in dealer enquiries</p>
+                </div>
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>Region-specific ad creatives deployed</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-section-card-img">
+            <img
+              loading="lazy"
+              src="/images/bobcat-project.webp"
+              alt="Linus Torvalds - linux"
+              alt="rightmark"
+            />
+          </div>
+        </div>
+        <div class="project-card-2">
+          <div class="project-section-card-text">
+            <div class="scroling-section-part-2">
+              <h4 class="project-card-heading">RNS Motors</h4>
+              <p>
+                Emovur supported RNS Motors with GMB management, Meta Ads,
+                WhatsApp integration, and social media—driving more walk-ins and
+                leads.
+              </p>
+              <div class="card-section-circle">
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>+40% increase in GMB views</p>
+                </div>
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>2x growth in social media engagement</p>
+                </div>
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>+25% leads from Meta Ads</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-section-card-img">
+            <img
+              loading="lazy"
+              src="/images/rns-project.webp"
+              alt="Linus Torvalds - linux"
+            />
+          </div>
+        </div>
+        <div class="project-card-3">
+          <div class="project-section-card-text">
+            <div class="scroling-section-part-2">
+              <h4 class="project-card-heading">Technobind</h4>
+              <p>
+                Emovur collaborated with Technobind to strengthen their digital
+                presence through strategic EDMs, social media management, and
+                tailored creatives—supporting partner engagement across India.
+              </p>
+              <div class="card-section-circle">
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>30+ partner-focused EDMs delivered</p>
+                </div>
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                  />
+                  <p>3x boost in social media reach</p>
+                </div>
+                <div class="project-point-section">
+                  <img
+                    src="/images/rightmark.svg"
+                    width="20px"
+                    height="20px"
+                    style="background-color: #0c9ffa;border-radius: 50%;padding: 3px;"
+                    alt="rightmark"
+                  />
+                  <p>Strong brand presence across India</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-section-card-img">
+            <img
+              loading="lazy"
+              src="/images/techno-project.webp"
+              alt="Linus Torvalds - linux"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- project end -->
+
+  <!-- sticky tabs start-->
+  <div class="container mt-100 pt-50">
+    <div class="single-scroling-section">
+      <div class="single-scroling-section-part-1">
+        <h4>We win awards. Let’s win one for you too.</h4>
+        <h4 style="opacity: 0.5;font-family: gilroy-semibold;margin-top: 20px">
+          Turn your vision into something everyone will notice.
+        </h4>
+      </div>
+      <div class="single-scroling-section-part-2">
+        <div class="scroling-wrapper">
+          <div class="scroling-img-1">
+            <img src="/images/metascroll.png" alt="scrolling-img-1" />
+            <img src="/images/go.png" alt="scrolling-img-1" />
+            <img src="/images/googleadsscroll.png" alt="scrolling-img-1" />
+            <!-- duplicates for looping -->
+            <img src="/images/metascroll.png" alt="scrolling-img-1" />
+            <img src="/images/go.png" alt="scrolling-img-1" />
+            <img src="/images/googleadsscroll.png" alt="scrolling-img-1" />
+          </div>
+        </div>
+
+        <div class="scroling-wrapper">
+          <div class="scroling-img-2">
+            <img src="/images/evate24.png" alt="scrolling-img-1" />
+            <img src="/images/metascroll.png" alt="scrolling-img-1" />
+            <img src="/images/go.png" alt="scrolling-img-1" />
+            <!-- duplicates for looping -->
+            <img src="/images/evate24.png" alt="scrolling-img-1" />
+            <img src="/images/googleadsscroll.png" alt="scrolling-img-1" />
+            <img src="/images/go.png" alt="scrolling-img-1" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- sticky tabs ends -->
+
+  <!-- /.apps-testimonial -->
+
+  <div class="app-testimonial-home pt-50 pb-50 mt-100">
+    <div class="container">
+      <div class="app-main-part">
+        <div class="app-main-part-1">
+          <div class="app-main-part-1-heading">
+            <h2>Clients Love us</h2>
+            <p>Trusted by 120+ happy clients. adding $50M+ in reveneu.</p>
+          </div>
+          <div class="app-main-part-1-stats">
+            <div class="stats-card">
+              <h5>120+</h5>
+              <p>Happy clients</p>
+            </div>
+            <div class="stats-card">
+              <h5>$50M</h5>
+              <p>revenue added</p>
+            </div>
+            <div class="stats-card">
+              <h5>4.8</h5>
+              <p>Average Rating</p>
+            </div>
+          </div>
+          <div class="app-main-part-1-border"></div>
+          <div class="app-main-part-1-button">
+            <a
+              href="/contact"
+              class="theme-btn solid-button-one button-orange wow fadeInLeft animated"
+              data-wow-delay="1.5s">Contact Us</a
+            >
+          </div>
+        </div>
+        <div class="app-main-part-2">
+          <div class="reviews-1">
+            <div class="reviews-part-1">
+              <img
+                src="/images/case-study-4.png"
+                alt="reviews-img-1"
+                width="76px"
+                alt="rightmark"
+                height="76px"
+              />
+              <div class="reviews-text">
+                <h4>Sudhakar</h4>
+                <p>Surakshaa</p>
+              </div>
+            </div>
+            <div class="app-main-part-1-border"></div>
+            <div class="app-main-part-1-rating">
+              <p>5.0</p>
+              <img src="/images/rating.svg" height="20px" alt="rightmark" />
+            </div>
+            <p>
+              The solutions they offer are simple, effective and serve the
+              purpose. Their pricing is competitive and they deserve it.
+            </p>
+          </div>
+          <div class="reviews-2">
+            <div class="reviews-part-1">
+              <img
+                src="/images/case-study-2.png"
+                alt="reviews-img-1"
+                width="76px"
+                height="76px"
+              />
+              <div class="reviews-text">
+                <h4>Mohan</h4>
+                <p>Shruti Motors</p>
+              </div>
+            </div>
+            <div class="app-main-part-1-border"></div>
+            <div class="app-main-part-1-rating">
+              <p>5.0</p>
+              <img src="/images/rating.svg" height="20px" alt="rightmark" />
+            </div>
+            <p>
+              The team quickly understood our vision and delivered work that
+              matched it perfectly. Communication was smooth, and results were
+              consistently impressive.
+            </p>
+          </div>
+          <div class="reviews-3">
+            <div class="reviews-part-1">
+              <img
+                src="/images/case-study-1.png"
+                alt="reviews-img-1"
+                width="76px"
+                height="76px"
+              />
+              <div class="reviews-text">
+                <h4>Prashanth G J</h4>
+                <p>Technobind</p>
+              </div>
+            </div>
+            <div class="app-main-part-1-border"></div>
+            <div class="app-main-part-1-rating">
+              <p>5.0</p>
+              <img src="/images/rating-4.svg" height="20px" alt="rightmark" />
+            </div>
+            <p>
+              They bring clarity, structure, and great ideas to the table every
+              time. Even tight deadlines never felt like a problem.
+            </p>
+          </div>
+          <div class="reviews-4">
+            <div class="reviews-part-1">
+              <img
+                src="/images/case-study-3.png"
+                alt="reviews-img-1"
+                width="76px"
+                height="76px"
+              />
+              <div class="reviews-text">
+                <h4>Anmol</h4>
+                <p>RNS Motors</p>
+              </div>
+            </div>
+            <div class="app-main-part-1-border"></div>
+            <div class="app-main-part-1-rating">
+              <p>5.0</p>
+              <img src="/images/rating.svg" height="20px" alt="rightmark" />
+            </div>
+            <p>
+              They just understand what we want without overcomplicating things.
+              The final output felt thoughtful, clean, and exactly what we
+              needed.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- testimonial end -->
+
+  <div
+    class="faq-page faq-tab-wrapper aos-init aos-animate mb-100 mobile-width"
+    data-aos="fade-up"
+    data-aos-delay="200"
+    style="padding-top: 100px;"
+  >
+    <div class="container">
+      <div class="theme-title-one mb-50">
+        <h2 class="main-title underline pl-3 pl-lg-0 text-left text-lg-center">
+          <span>Frequently Asked Questions</span>
+        </h2>
+      </div>
+      <!-- /.theme-title-one -->
+      <div class="row">
+        <div class="col-lg-6">
+          <!-- ================== FAQ Panel ================ -->
+          <div class="faq-panel">
+            <div class="panel-group theme-accordion" id="accordion">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapse1"
+                    >
+                      Can we use WhatsApp API for marketing purposes?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse1" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      Yes, you can absolutely use the WhatsApp API for marketing
+                      purposes. You’ll just need to get your templates approved
+                      under the marketing category.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 1 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapse4"
+                    >
+                      Can we migrate from different provider?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse4" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      Yes, you can migrate WhatsApp API number from different
+                      provider to our platform and this has no dependency on
+                      your existing provider.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 4 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion"
+                      href="#collapse3"
+                    >
+                      What is the difference between WhatsApp Business and
+                      WhatsApp API?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse3" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      The WhatsApp Business app is designed for small
+                      businesses, offering features like business profiles,
+                      quick replies, and basic automation for direct customer
+                      communication. It's easy to set up and supports one
+                      device. The WhatsApp Business API is for larger businesses
+                      requiring scalability, integration with CRMs, and advanced
+                      automation like chatbots. It allows for high-volume
+                      messaging, multi-agent support, and integration into
+                      existing business systems.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 3 -->
+            </div>
+            <!-- end #accordion -->
+          </div>
+          <!-- End of .faq-panel -->
+        </div>
+        <!-- /.col- -->
+        <div class="col-lg-6">
+          <!-- ================== FAQ Panel ================ -->
+          <div class="faq-panel">
+            <div class="panel-group theme-accordion" id="accordion2">
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title align-center justify-content-center">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion2"
+                      href="#collapse33"
+                    >
+                      How to get the WhatsApp Blue Tick(Green Tick)?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse33" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      The WhatsApp Blue Tick (Green Tick) is subject to Meta’s
+                      approval. To request verification, you must meet the
+                      following criteria: A verified Facebook Business Account.
+                      A strong online presence: Provide at least 5 credible PR
+                      links, such as articles, news mentions, or listings that
+                      demonstrate the notability of your brand. Business
+                      category compliance: Ensure your business falls within
+                      WhatsApp’s approved categories and adheres to its
+                      guidelines.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 3 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion2"
+                      href="#collapse44"
+                    >
+                      What are the pre-requisites to get WhatsApp API?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse44" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      The key prerequisites for obtaining the WhatsApp API are:
+                      Facebook Business Account: A verified Facebook Business
+                      Manager account is required. Business Phone Number: A
+                      phone number that isn’t already linked to WhatsApp
+                      Business or WhatsApp Messenger.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 4 -->
+              <div class="panel">
+                <div class="panel-heading">
+                  <h6 class="panel-title">
+                    <a
+                      data-toggle="collapse"
+                      data-parent="#accordion2"
+                      href="#collapse11"
+                    >
+                      Are we responsible for configuring the WhatsApp API
+                      ChatBot on our own?</a
+                    >
+                  </h6>
+                </div>
+                <div id="collapse11" class="panel-collapse collapse">
+                  <div class="panel-body">
+                    <p style="text-align: left;">
+                      We'd be happy to configure the chatbot to meet your
+                      specific requirements at no additional cost. Simply reach
+                      out to your dedicated manager, and we'll ensure it's done
+                      effortlessly.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <!-- /panel 1 -->
+            </div>
+            <!-- end #accordion2 -->
+          </div>
+          <!-- End of .faq-panel -->
+        </div>
+        <!-- /.col- -->
+      </div>
+      <!-- /.row -->
+    </div>
+    <!-- /.container -->
+  </div>
+</Layout>
+
+<!-- Include Swiper.js (CDN) -->
+<!-- Include Swiper.js (CDN) -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js" is:inline
+></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    var swiper = new Swiper(".swiper-container", {
+      slidesPerView: "auto",
+      spaceBetween: 20,
+      loop: true,
+      autoplay: {
+        delay: 4000, // 4 seconds
+        disableOnInteraction: false, // Keep autoplay running even after user interaction
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    });
+  });
+</script>
+
+<style>
+  .i {
+    position: absolute !important;
+    top: -9015px;
+    left: 0;
+  }
+</style>
+
+<script>
+  // Tabs functionality
+  // Tab switching functionality
+  const tabs = document.querySelectorAll(".whatsapp-flows-tab");
+  const contents = document.querySelectorAll(".whatsapp-flows-content");
+
+  tabs.forEach((tab) => {
+    tab.addEventListener("click", function () {
+      // Remove active class from all tabs
+      tabs.forEach((t) => t.classList.remove("whatsapp-flows-active"));
+      this.classList.add("whatsapp-flows-active");
+
+      // Hide all content
+      contents.forEach((content) => content.classList.add("hidden"));
+
+      // Show the clicked tab's content
+      const target = document.getElementById(this.dataset.tab);
+      target.classList.remove("hidden");
+    });
+  });
+</script>
+
+<script>
+  const sections = document.querySelectorAll(".section");
+  const dynamicContent = document.querySelector(".dynamic-content");
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const content = entry.target.getAttribute("data-content");
+          dynamicContent.innerHTML = content;
+        }
+      });
+    },
+    { threshold: 0.5 }
+  ); // trigger when 50% in view
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+</script>

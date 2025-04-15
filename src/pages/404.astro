@@ -1,0 +1,129 @@
+---
+import Layout from "../layouts/Layout.astro";
+// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
+// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+
+const metaTitle = "Page Not Found";
+const metaDescription =
+  "The page you are looking for could not be found. Please check the URL and try again.";
+const canonicalUrl = "https://emovur.com";
+const keywords =
+  "Digital marketing company, Digital marketing services, Marketing agency, Hyperlocal marketing agency, Creative Agency.";
+---
+
+<style>
+  .eye-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-image: url("/images/404-bg.webp");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .eyes {
+    margin-top: 110px;
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    column-gap: 60px;
+  }
+
+  .eye {
+    width: 170px;
+    height: 210px;
+    border-radius: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid #f7f7f7;
+    transform: skew(-5deg);
+  }
+
+  .pupil {
+    width: 100px;
+    height: 100px;
+    border-radius: 101px;
+    background-color: #000;
+  }
+  .eye-container h1 {
+    margin-top: 50px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 600;
+    font-size: 70px;
+    color: #606060;
+  }
+  .eye-container p {
+    /* margin-top: 10px; */
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    color: #606060;
+  }
+  .eye-container button {
+    margin-top: 40px;
+    width: 250px;
+    height: 40px;
+    border-radius: 10px;
+    color: #0c9ffa;
+    border: none;
+    background-color: #fff;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    border: 1px solid #0c9ffa;
+  }
+  .eye-container button:hover {
+    background-color: #0c9ffa;
+    color: #fff;
+  }
+</style>
+
+<Layout
+  title={metaTitle}
+  headerType="main"
+  description={metaDescription}
+  canonical={canonicalUrl}
+  keywords={keywords}
+>
+  <div class="container eye-container">
+    <div class="eyes">
+      <div class="eye">
+        <div class="pupil"></div>
+      </div>
+      <div class="eye">
+        <div class="pupil"></div>
+      </div>
+    </div>
+    <h1>OOPS!</h1>
+    <p>The Page You Requested Could Not Be Found.</p>
+    <a href="/">
+      <button>
+        <i class="fa fa-home fa-2x" aria-hidden="true"></i> Go Back to Home
+      </button>
+    </a>
+  </div>
+</Layout>
+
+<script>
+  // get both pupils
+  const pupils = document.querySelectorAll(".eye .pupil");
+  window.addEventListener("mousemove", (e) => {
+    pupils.forEach((pupil) => {
+      // get x and y postion of cursor
+      var rect = pupil.getBoundingClientRect();
+      var x = (e.pageX - rect.left) / 25 + "px";
+      var y = (e.pageY - rect.top) / 25 + "px";
+      pupil.style.transform = "translate3d(" + x + "," + y + ", 0px)";
+    });
+  });
+</script>
